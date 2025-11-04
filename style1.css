@@ -1,0 +1,234 @@
+
+        /* Reset y estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Main content */
+        .main {
+            padding: 2rem 0;
+        }
+
+        .single-post {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            border-bottom: 3px solid #ff6b6b;
+            padding-bottom: 1.5rem;
+        }
+
+        .post-header h1 {
+            font-size: 2.8rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .post-meta {
+            color: #666;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .post-content-single {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .post-content-single img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .post-content-single img:hover {
+            transform: scale(1.02);
+        }
+
+        .post-content-single h2 {
+            color: #1a1a2e;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ff6b6b;
+        }
+
+        .post-content-single h3 {
+            color: #333;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .post-content-single p {
+            margin-bottom: 1.2rem;
+        }
+
+        .post-content-single ul, .post-content-single ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .post-content-single li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: #555;
+        }
+
+        .concert-setlist {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .setlist-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1a1a2e;
+        }
+
+        .song-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .song {
+            padding: 0.5rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .single-post {
+                padding: 1.5rem;
+            }
+            
+            .song-list {
+                grid-template-columns: 1fr;
+            }
+        }
